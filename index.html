@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FSPGlobal | Next-Generation BPO Solutions</title>
+    <title>FSPGlobal | Professional BPO Solutions Redesign</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -11,142 +11,158 @@
         .hero-bg {
             background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
                         url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80');
-            background-size: cover;
-            background-position: center;
+            background-size: cover; background-position: center;
         }
+        .section-padding { padding: 100px 0; }
     </style>
 </head>
 <body class="bg-white">
 
-    <div class="bg-blue-900 text-white py-2 px-12 text-xs flex justify-between items-center hidden md:flex">
+    <div class="bg-blue-900 text-white py-2 px-12 text-xs flex justify-between items-center hidden md:flex sticky top-0 z-[60]">
         <div>📍 Piata Stefan cel Mare, nr.4/ 119, Cluj-Napoca, Romania</div>
         <div>📞 +40.364.88.56.77 | 🕒 24/7, 365 Days Available</div>
     </div>
 
-    <nav class="flex items-center justify-between px-12 py-5 border-b sticky top-0 bg-white z-50">
+    <nav class="flex items-center justify-between px-12 py-5 border-b sticky top-[32px] bg-white z-50 shadow-sm">
         <div class="text-3xl font-extrabold text-blue-900 tracking-tight">FSP<span class="text-blue-500">Global</span></div>
         
-        <div class="hidden lg:flex space-x-8 text-gray-700 font-semibold text-sm uppercase tracking-wide">
-            <a href="#" class="hover:text-blue-600 transition">Home</a>
+        <div class="hidden lg:flex space-x-6 text-gray-700 font-bold text-[11px] uppercase tracking-widest">
+            <a href="#home" class="hover:text-blue-600 transition">Home</a>
             <div class="relative group cursor-pointer">
                 <span class="hover:text-blue-600">Services ▼</span>
-                <div class="absolute hidden group-hover:block bg-white shadow-xl border p-4 w-64 mt-2 rounded-lg">
-                    <a href="#" class="block py-2 hover:text-blue-600">Multilingual Call Center</a>
-                    <a href="#" class="block py-2 hover:text-blue-600">Network Operations Center</a>
-                    <a href="#" class="block py-2 hover:text-blue-600">Credit Management</a>
-                    <a href="#" class="block py-2 hover:text-blue-600">Data Mining & KPO</a>
+                <div class="absolute hidden group-hover:block bg-white shadow-2xl border p-4 w-64 mt-2 rounded-lg">
+                    <a href="#multilingual" class="block py-2 hover:text-blue-600 border-b">Multilingual Call Center</a>
+                    <a href="#noc" class="block py-2 hover:text-blue-600 border-b">Network Operations</a>
+                    <a href="#credit" class="block py-2 hover:text-blue-600 border-b">Credit Management</a>
+                    <a href="#data" class="block py-2 hover:text-blue-600">Data Mining & KPO</a>
                 </div>
             </div>
-            <a href="#" class="hover:text-blue-600 transition">Careers</a>
-            <a href="#" class="hover:text-blue-600 transition">About</a>
-            <a href="#" class="hover:text-blue-600 transition">News</a>
-            <a href="#" class="hover:text-blue-600 transition">Contact</a>
+            <a href="#careers" class="hover:text-blue-600 transition">Careers</a>
+            <a href="#about" class="hover:text-blue-600 transition">About</a>
+            <a href="#news" class="hover:text-blue-600 transition">News</a>
+            <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
         </div>
 
-        <button class="bg-blue-600 text-white px-8 py-3 rounded-md font-bold hover:bg-blue-700 transition shadow-md">
+        <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-md font-bold hover:bg-blue-700 transition shadow-md">
             GET A QUOTE
-        </button>
+        </a>
     </nav>
 
-    <section class="hero-bg text-white py-32 px-12">
+    <section id="home" class="hero-bg text-white py-40 px-12">
         <div class="max-w-6xl mx-auto">
             <div class="max-w-3xl">
-                <h1 class="text-6xl font-bold leading-tight mb-6">Next-generation <br><span class="text-blue-400">Customer Experience</span></h1>
+                <h1 class="text-7xl font-bold leading-tight mb-8">Next-generation <br><span class="text-blue-400">Customer Experience</span></h1>
                 <p class="text-xl text-gray-300 mb-10 leading-relaxed">
-                    Our flexibility enables us to manage your requirements with complete dedication. From professional individuals to large multinational companies, we provide efficient and competitive solutions.
+                    Our flexibility enables us to manage your requirements with complete dedication. We provide efficient and competitive solutions that support customer relations in all stages.
                 </p>
                 <div class="flex gap-4">
-                    <button class="bg-blue-500 px-10 py-4 rounded font-bold hover:bg-blue-400 transition">OUR SERVICES</button>
-                    <button class="border border-white/40 px-10 py-4 rounded font-bold hover:bg-white/10 transition">CONNECT WITH US</button>
+                    <a href="#multilingual" class="bg-blue-500 px-10 py-4 rounded font-bold hover:bg-blue-400 transition">OUR SERVICES</a>
+                    <a href="#contact" class="border border-white/40 px-10 py-4 rounded font-bold hover:bg-white/10 transition text-center">CONNECT WITH US</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="bg-gray-100 py-12 px-12 border-b">
-        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center opacity-50 grayscale gap-8">
+    <div class="bg-gray-50 py-16 px-12 border-b">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-center items-center opacity-40 grayscale gap-20">
             <span class="text-2xl font-bold">PANASONIC</span>
             <span class="text-2xl font-bold italic">Tonino Lamborghini</span>
-            <span class="text-2xl font-bold tracking-widest">MERIDIAN</span>
+            <span class="text-2xl font-bold">MERIDIAN</span>
             <span class="text-2xl font-bold">KNOWITÀ</span>
-            <span class="text-2xl font-bold uppercase">Mille Ottani</span>
         </div>
     </div>
 
-    <section class="py-24 px-12 bg-white">
-        <div class="max-w-7xl mx-auto text-center mb-16">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
-            <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-        </div>
-        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
-            <div class="p-6 text-center">
-                <div class="text-blue-600 text-4xl mb-4 italic font-bold">16+</div>
-                <h3 class="font-bold text-xl mb-2">Experience</h3>
-                <p class="text-gray-600 text-sm">Many years of industry experience enabling us to cater to any project needs.</p>
+    <section id="multilingual" class="section-padding bg-white px-12 border-b">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-blue-900 mb-6">Multilingual Call Center</h2>
+                <p class="text-gray-600 mb-6 text-lg">Our call center covers both Outbound & Inbound, 24/7, 365 days. We support 25+ languages including English, Italian, Spanish, German, French, and more.</p>
+                <ul class="space-y-3 font-semibold text-gray-700 mb-8">
+                    <li class="flex items-center gap-3"><span class="text-blue-500">✔</span> Telephone Support</li>
+                    <li class="flex items-center gap-3"><span class="text-blue-500">✔</span> Email & Live Chat Support</li>
+                    <li class="flex items-center gap-3"><span class="text-blue-500">✔</span> Social Media Management</li>
+                </ul>
+                <a href="#contact" class="text-blue-600 font-bold border-b-2 border-blue-600 pb-1">GET A QUOTE FOR THIS SERVICE →</a>
             </div>
-            <div class="p-6 text-center">
-                <div class="text-blue-600 text-4xl mb-4 font-bold">∞</div>
-                <h3 class="font-bold text-xl mb-2">Flexibility</h3>
-                <p class="text-gray-600 text-sm">Managing small, medium, and large projects with equal dedication.</p>
-            </div>
-            <div class="p-6 text-center">
-                <div class="text-blue-600 text-4xl mb-4 font-bold">🎯</div>
-                <h3 class="font-bold text-xl mb-2">Dedicated Focus</h3>
-                <p class="text-gray-600 text-sm">We act as an extension of your company with dedicated focus on your goals.</p>
-            </div>
-            <div class="p-6 text-center">
-                <div class="text-blue-600 text-4xl mb-4 font-bold">📉</div>
-                <h3 class="font-bold text-xl mb-2">Competitive Rates</h3>
-                <p class="text-gray-600 text-sm">Major price differentials without losing quality and dedication.</p>
-            </div>
+            <div class="bg-blue-900 h-80 rounded-2xl flex items-center justify-center text-white text-7xl">🎧</div>
         </div>
     </section>
 
-    <section class="py-24 px-12 bg-gray-50">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 border-l-4 border-blue-600 pl-4">Our Core Solutions</h2>
+    <section id="noc" class="section-padding bg-slate-900 text-white px-12">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Network Operations Center (NOC)</h2>
+            <p class="text-gray-400 text-xl max-w-2xl mx-auto mb-12">Proactive monitoring and technical support for several networks requiring special attention. 24/7 vigilance for your infrastructure.</p>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 border hover:shadow-xl transition">
-                    <h4 class="font-bold text-lg mb-4 text-blue-900 uppercase">Multilingual Call Center</h4>
-                    <p class="text-gray-600 text-sm mb-6">Our call center covers both Outbound & Inbound, 24/7, 365 days. Customer care via telephone, email, live chat & social media.</p>
-                    <a href="#" class="text-blue-600 font-bold text-sm">READ MORE →</a>
+                <div class="p-8 border border-white/10 rounded-xl hover:bg-white/5 transition">
+                    <h4 class="font-bold text-xl mb-4">Monitoring</h4>
+                    <p class="text-sm text-gray-500">Real-time oversight of critical network traffic and stability.</p>
                 </div>
-                <div class="bg-white p-8 border hover:shadow-xl transition">
-                    <h4 class="font-bold text-lg mb-4 text-blue-900 uppercase">Database Management</h4>
-                    <p class="text-gray-600 text-sm mb-6">We can create databases and manage them for you, ensuring data integrity and accessibility.</p>
-                    <a href="#" class="text-blue-600 font-bold text-sm">READ MORE →</a>
+                <div class="p-8 border border-white/10 rounded-xl hover:bg-white/5 transition">
+                    <h4 class="font-bold text-xl mb-4">Escalation</h4>
+                    <p class="text-sm text-gray-500">Rapid response and technical escalation of all network incidents.</p>
                 </div>
-                <div class="bg-white p-8 border hover:shadow-xl transition">
-                    <h4 class="font-bold text-lg mb-4 text-blue-900 uppercase">Credit Management</h4>
-                    <p class="text-gray-600 text-sm mb-6">Aiding you in the process of granting credit and recovering this credit when it's due.</p>
-                    <a href="#" class="text-blue-600 font-bold text-sm">READ MORE →</a>
+                <div class="p-8 border border-white/10 rounded-xl hover:bg-white/5 transition">
+                    <h4 class="font-bold text-xl mb-4">Reporting</h4>
+                    <p class="text-sm text-gray-500">Serious and effective feedback conducted by professional teams.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-gray-400 py-20 px-12">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16">
-            <div>
-                <div class="text-2xl font-bold text-white mb-6">FSPGlobal</div>
-                <p class="text-sm leading-relaxed">Providing efficient and competitive solutions that support customer relations in all stages.</p>
+    <section id="credit" class="section-padding bg-white px-12">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <div class="p-10 border rounded-3xl hover:shadow-2xl transition">
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">Credit Management</h3>
+                <p class="text-gray-600 mb-6">We aid you in granting credit & recovering this credit when it's due. Professional, courtesy, and promptness are our absolute strengths.</p>
+                <a href="#contact" class="text-blue-500 font-bold uppercase text-xs tracking-widest">Learn More</a>
             </div>
-            <div>
-                <h5 class="text-white font-bold mb-6">Contact Info</h5>
-                <p class="text-sm mb-2">📍 Piata Stefan cel Mare, nr.4/ 119, Cluj-Napoca, Romania</p>
-                <p class="text-sm mb-2">📞 +40.364.88.56.77</p>
-                <p class="text-sm">🕒 24/7, 365</p>
-            </div>
-            <div>
-                <h5 class="text-white font-bold mb-6">Connect</h5>
-                <div class="flex gap-4">
-                    <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition cursor-pointer">In</div>
-                    <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition cursor-pointer">Fb</div>
-                </div>
+            <div id="data" class="p-10 border rounded-3xl hover:shadow-2xl transition bg-gray-50">
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">Data Mining & KPO</h3>
+                <p class="text-gray-600 mb-6">Examining your large databases and generating new intelligence information to give your business a competitive edge.</p>
+                <a href="#contact" class="text-blue-500 font-bold uppercase text-xs tracking-widest">Learn More</a>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto border-t border-white/10 mt-16 pt-8 text-xs text-center">
-            Copyright © 2026 FSPGlobal. Redesign Prototype.
+    </section>
+
+    <section id="about" class="section-padding bg-gray-100 px-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">16 Years of Excellence</h2>
+            <p class="text-gray-700 text-lg leading-relaxed mb-10">
+                FSP Global has proven itself a highly efficient partner in managing, reorganizing, updating and qualifying commercial databases and contact lists. Our many years of experience cater to any project needs.
+            </p>
+            <div id="careers" class="bg-white p-8 rounded-xl shadow-lg border">
+                <h4 class="font-bold text-xl mb-2 text-blue-600">Careers</h4>
+                <p class="text-gray-600 mb-4 italic">Join our team of multilingual professionals in Cluj-Napoca.</p>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded font-bold">Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-white px-12">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Connect With Us</h2>
+                <p class="text-gray-500 italic">Get your free price quote within 24 hours.</p>
+            </div>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" placeholder="Full Name" class="p-4 border bg-gray-50 rounded-lg">
+                <input type="email" placeholder="Email Address" class="p-4 border bg-gray-50 rounded-lg">
+                <select class="p-4 border bg-gray-50 rounded-lg md:col-span-2">
+                    <option>Select Service Needed...</option>
+                    <option>Multilingual Call Center</option>
+                    <option>Network Operations Center</option>
+                    <option>Credit Management</option>
+                </select>
+                <textarea placeholder="Tell us about your project" class="p-4 border bg-gray-50 rounded-lg md:col-span-2 h-32"></textarea>
+                <button class="bg-blue-600 text-white py-5 rounded-lg font-bold uppercase tracking-widest md:col-span-2 hover:bg-blue-700 transition">Send Quote Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-gray-500 py-16 px-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            <div class="text-2xl font-bold text-white">FSPGlobal</div>
+            <div class="text-xs text-right">Copyright © 2026 FSPGlobal. Developed for Presentation.</div>
         </div>
     </footer>
 
