@@ -3,44 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Management | FSPGlobal Financial Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
-<body>
+<body class="bg-gray-50 text-slate-900">
 
-    <nav class="flex items-center justify-between px-12 py-5 border-b sticky top-0 bg-white z-50 shadow-sm">
+    <nav class="flex items-center justify-between px-12 py-5 border-b sticky top-0 bg-white/90 backdrop-blur-md z-50">
         <div class="text-3xl font-extrabold text-blue-900 tracking-tight"><a href="index.html">FSP<span class="text-blue-500">Global</span></a></div>
-        <div class="hidden lg:flex space-x-4 text-gray-700 font-bold text-[10px] uppercase tracking-widest">
+        <div class="hidden lg:flex space-x-6 text-gray-700 font-bold text-[10px] uppercase tracking-widest">
             <a href="index.html" class="hover:text-blue-600">Home</a>
             <a href="multilingual.html" class="hover:text-blue-600">Call Center</a>
             <a href="noc.html" class="hover:text-blue-600">NOC</a>
-            <a href="credit.html" class="hover:text-blue-600">Credit</a>
+            <a href="credit.html" class="text-blue-600 border-b-2 border-blue-600">Credit</a>
             <a href="data-mining.html" class="hover:text-blue-600">Data Mining</a>
-            <a href="careers.html" class="hover:text-blue-600">Careers</a>
             <a href="about.html" class="hover:text-blue-600">About</a>
-            <a href="news.html" class="hover:text-blue-600">News</a>
-            <a href="contact.html" class="text-blue-600 font-black underline">Contact</a>
+            <a href="contact.html" class="hover:text-blue-600">Contact</a>
         </div>
     </nav>
 
-    <header class="bg-blue-900 text-white py-24 text-center">
-        <h1 class="text-5xl font-bold uppercase tracking-tighter">Credit Management</h1>
-        <p class="text-blue-300 mt-4 text-xl">REPLACE_SUBTITLE</p>
+    <header class="bg-indigo-950 text-white py-32 px-12 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto relative z-10">
+            <h1 class="text-6xl font-black mb-6 leading-tight uppercase tracking-tighter">Strategic Credit <br>Management</h1>
+            <p class="text-xl text-indigo-200 max-w-2xl">Aiding the process of granting and recovering credit with absolute precision, courtesy, and promptness. We protect your cash flow and your reputation.</p>
+        </div>
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-indigo-800 rounded-full blur-3xl opacity-20"></div>
     </header>
 
-    <section class="max-w-4xl mx-auto py-20 px-10 text-gray-700">
-    <div class="border-l-4 border-indigo-600 pl-8 mb-12">
-        <h2 class="text-3xl font-bold text-indigo-900 mb-4 uppercase">Credit & Collection Management</h2>
-        <p class="text-xl">FSP Global aids you in the delicate process of granting credit and recovering it when due.</p>
-    </div>
-    <div class="space-y-8">
-        <p>Our absolute strengths are <strong>Courtesy, Promptness, and Precision</strong>. We maintain the relationship with your client while ensuring your accounts receivable stay current.</p>
-        <div class="bg-indigo-50 p-6 rounded-lg font-semibold">
-            Service Highlights: Consumer Debt Recovery, Commercial Collection, and Credit Risk Assessment.
+    <section class="py-24 px-12">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+            <div class="space-y-8">
+                <h2 class="text-4xl font-bold text-slate-900 uppercase">Asset Recovery <br>& Liquidity</h2>
+                <p class="text-lg text-slate-600 leading-relaxed">FSPGlobal provides highly efficient partnership in managing and qualifying commercial databases and debt recovery. Our flexibility enables us to manage small, medium, and large-scale recovery projects with complete dedication.</p>
+                <div class="bg-white p-6 border-l-4 border-indigo-600 shadow-sm italic">
+                    "Precision and promptness are our absolute strengths in financial aid."
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6">
+                <div class="bg-white p-8 rounded-2xl border hover:shadow-xl transition group">
+                    <h3 class="font-bold text-indigo-900 text-xl mb-3 flex justify-between">Commercial Collection <span class="group-hover:translate-x-2 transition-transform">→</span></h3>
+                    <p class="text-slate-500 text-sm">Managing B2B debt recovery with professional mediation that preserves the long-term commercial relationship between you and your client.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border hover:shadow-xl transition group">
+                    <h3 class="font-bold text-indigo-900 text-xl mb-3 flex justify-between">Consumer Debt Recovery <span class="group-hover:translate-x-2 transition-transform">→</span></h3>
+                    <p class="text-slate-500 text-sm">Handling high-volume B2C collections with strict adherence to legal compliance and ethical recovery protocols.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border hover:shadow-xl transition group">
+                    <h3 class="font-bold text-indigo-900 text-xl mb-3 flex justify-between">Credit Risk Assessment <span class="group-hover:translate-x-2 transition-transform">→</span></h3>
+                    <p class="text-slate-500 text-sm">Supporting the initial stages of granting credit by analyzing database history and commercial qualification.</p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 </body>
 </html>
