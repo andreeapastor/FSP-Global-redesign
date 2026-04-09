@@ -3,56 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact FSPGlobal | Get a Strategic Quote</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; }</style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .contact-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50 text-slate-900">
 
-    <nav class="flex items-center justify-between px-12 py-5 border-b sticky top-0 bg-white z-50 shadow-sm">
+    <nav class="flex items-center justify-between px-12 py-5 border-b sticky top-0 bg-white/90 backdrop-blur-md z-50">
         <div class="text-3xl font-extrabold text-blue-900 tracking-tight"><a href="index.html">FSP<span class="text-blue-500">Global</span></a></div>
-        <div class="hidden lg:flex space-x-4 text-gray-700 font-bold text-[10px] uppercase tracking-widest">
+        <div class="hidden lg:flex space-x-6 text-gray-700 font-bold text-[10px] uppercase tracking-widest">
             <a href="index.html" class="hover:text-blue-600">Home</a>
             <a href="multilingual.html" class="hover:text-blue-600">Call Center</a>
             <a href="noc.html" class="hover:text-blue-600">NOC</a>
             <a href="credit.html" class="hover:text-blue-600">Credit</a>
             <a href="data-mining.html" class="hover:text-blue-600">Data Mining</a>
-            <a href="careers.html" class="hover:text-blue-600">Careers</a>
             <a href="about.html" class="hover:text-blue-600">About</a>
-            <a href="news.html" class="hover:text-blue-600">News</a>
-            <a href="contact.html" class="text-blue-600 font-black underline">Contact</a>
+            <a href="contact.html" class="text-blue-600 border-b-2 border-blue-600">Contact</a>
         </div>
     </nav>
 
-    <header class="bg-blue-900 text-white py-24 text-center">
-        <h1 class="text-5xl font-bold uppercase tracking-tighter">Contact & Quotes</h1>
-        <p class="text-blue-300 mt-4 text-xl">REPLACE_SUBTITLE</p>
+    <header class="contact-gradient text-white py-32 px-12 relative overflow-hidden text-center lg:text-left">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div class="relative z-10">
+                <span class="text-blue-300 font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Partner With Us</span>
+                <h1 class="text-7xl font-black mb-6 leading-tight uppercase tracking-tighter">Let's Build <br><span class="text-blue-400">Your Solution</span></h1>
+                <p class="text-xl text-blue-100 leading-relaxed max-w-xl">Ready to scale your global operations? Our team is standing by 24/7/365 to design a customized BPO strategy for your business.</p>
+            </div>
+            <div class="hidden lg:flex justify-center">
+                <div class="w-64 h-64 border-8 border-blue-400/20 rounded-full flex items-center justify-center animate-pulse">
+                    <span class="text-8xl">📞</span>
+                </div>
+            </div>
+        </div>
     </header>
 
-   <section class="max-w-5xl mx-auto py-20 px-10 grid md:grid-cols-2 gap-20">
-    <div>
-        <h2 class="text-3xl font-bold mb-8">Visit Us in Cluj-Napoca</h2>
-        <div class="space-y-6 text-gray-600">
-            <p><strong>Headquarters:</strong><br>Piata Stefan cel Mare, nr.4/ 119, Cluj-Napoca, Romania</p>
-            <p><strong>Call Us:</strong><br>+40.364.88.56.77</p>
-            <p><strong>Availability:</strong><br>24/7/365 - We never close.</p>
+    <section class="py-24 px-12 max-w-7xl mx-auto -mt-16 relative z-20">
+        <div class="grid lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-1 space-y-6">
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+                    <h3 class="text-blue-600 font-bold text-xs uppercase tracking-[0.2em] mb-4">Direct Lines</h3>
+                    <div class="space-y-4">
+                        <p class="text-sm font-semibold text-gray-400">Support & Sales</p>
+                        <p class="text-2xl font-bold text-slate-800">+40.364.88.56.77</p>
+                        <p class="text-sm font-semibold text-gray-400 mt-6">Email Inquiry</p>
+                        <p class="text-xl font-bold text-blue-600">info@fspglobal.com</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-3xl shadow-xl text-white">
+                    <h3 class="text-blue-400 font-bold text-xs uppercase tracking-[0.2em] mb-4">The Command Center</h3>
+                    <p class="text-lg font-bold mb-2">Cluj-Napoca, Romania</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Piata Stefan cel Mare, nr.4 / 119<br>Available 24/7, 365 Days a Year</p>
+                    <div class="w-full h-1 bg-blue-500/30"></div>
+                    <p class="mt-6 text-xs text-slate-500 italic uppercase tracking-widest">Global Hub of Transylvania</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2 bg-white p-12 rounded-3xl shadow-2xl border border-gray-100">
+                <h2 class="text-3xl font-bold mb-8 text-slate-900">Project Discovery</h2>
+                <form action="#" method="POST" class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-400 uppercase">Your Name</label>
+                        <input type="text" placeholder="John Doe" class="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition" required>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-400 uppercase">Work Email</label>
+                        <input type="email" placeholder="john@company.com" class="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition" required>
+                    </div>
+                    <div class="space-y-2 md:col-span-2">
+                        <label class="text-xs font-bold text-gray-400 uppercase">Service Required</label>
+                        <select class="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+                            <option>Multilingual Call Center</option>
+                            <option>NOC Technical Support</option>
+                            <option>Credit & Collection</option>
+                            <option>Data Mining & KPO</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2 md:col-span-2">
+                        <label class="text-xs font-bold text-gray-400 uppercase">Project Brief</label>
+                        <textarea placeholder="Tell us about your operational needs..." class="w-full p-4 bg-gray-50 border border-gray-100 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition h-32"></textarea>
+                    </div>
+                    <button type="submit" class="md:col-span-2 bg-blue-600 text-white py-5 rounded-2xl font-black uppercase tracking-[0.2em] shadow-lg shadow-blue-500/30 hover:bg-blue-700 hover:-translate-y-1 transition duration-300">
+                        Initiate Connection
+                    </button>
+                </form>
+            </div>
+
         </div>
-    </div>
-    <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
-        <h3 class="text-xl font-bold mb-6">Request a Proposal</h3>
-        <form class="space-y-4">
-            <input type="text" placeholder="Full Name" class="w-full p-4 bg-gray-50 border rounded-lg">
-            <select class="w-full p-4 bg-gray-50 border rounded-lg">
-                <option>Service Interested In...</option>
-                <option>Call Center</option>
-                <option>NOC / Tech</option>
-                <option>Collection</option>
-            </select>
-            <textarea placeholder="How can we help your business?" class="w-full p-4 bg-gray-50 border rounded-lg h-32"></textarea>
-            <button class="w-full bg-blue-600 text-white font-bold py-4 rounded-lg shadow-lg hover:bg-blue-700 transition">SEND REQUEST</button>
-        </form>
-    </div>
-</section>
+    </section>
+
+    <footer class="py-12 bg-gray-50 text-center border-t">
+        <p class="text-slate-400 text-[10px] uppercase tracking-[0.4em]">FSPGlobal • Secure Communications Terminal • © 2026</p>
+    </footer>
 
 </body>
 </html>
