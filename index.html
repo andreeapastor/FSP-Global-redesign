@@ -3,159 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FSPGlobal | Professional BPO Solutions Redesign</title>
+    <title>FSPGlobal | Premium BPO & Infrastructure Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .hero-bg {
-            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
-                        url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80');
-            background-size: cover; background-position: center;
-        }
-        .section-padding { padding: 100px 0; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-gradient { background: radial-gradient(circle at top right, #1e40af, #0f172a, #020617); }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }
+        .nav-link::after { content: ''; display: block; width: 0; height: 2px; background: #3b82f6; transition: width .3s; }
+        .nav-link:hover::after { width: 100%; }
     </style>
 </head>
-<body class="bg-white">
+<body class="bg-slate-950 text-slate-200 antialiased">
 
-    <div class="bg-blue-900 text-white py-2 px-12 text-xs flex justify-between items-center hidden md:flex sticky top-0 z-[60]">
-        <div>📍 Piata Stefan cel Mare, nr.4/ 119, Cluj-Napoca, Romania</div>
-        <div>📞 +40.364.88.56.77 | 🕒 24/7, 365 Days Available</div>
-    </div>
+    <nav class="flex items-center justify-between px-16 py-6 sticky top-0 bg-slate-950/80 backdrop-blur-xl z-[100] border-b border-white/5">
+        <div class="text-3xl font-extrabold tracking-tighter text-white">
+            FSP<span class="text-blue-500">GLOBAL</span>
+        </div>
+        <div class="hidden xl:flex space-x-8 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">
+            <a href="index.html" class="nav-link text-blue-500">Home</a>
+            <a href="multilingual.html" class="nav-link hover:text-white transition">Call Center</a>
+            <a href="noc.html" class="nav-link hover:text-white transition">NOC Ops</a>
+            <a href="credit.html" class="nav-link hover:text-white transition">Credit</a>
+            <a href="data-mining.html" class="nav-link hover:text-white transition">Intelligence</a>
+            <a href="about.html" class="nav-link hover:text-white transition">About</a>
+            <a href="careers.html" class="nav-link hover:text-white transition">Careers</a>
+            <a href="news.html" class="nav-link hover:text-white transition">News</a>
+        </div>
+        <a href="contact.html" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-widest shadow-lg shadow-blue-600/20 transition-all hover:scale-105">
+            Get Started
+        </a>
+    </nav>
 
-   <nav class="flex items-center justify-between px-12 py-5 border-b sticky top-0 bg-white z-50 shadow-sm">
-    <div class="text-3xl font-extrabold text-blue-900 tracking-tight">
-        <a href="index.html">FSP<span class="text-blue-500">Global</span></a>
-    </div>
-    
-    <div class="hidden lg:flex space-x-4 text-gray-700 font-bold text-[10px] uppercase tracking-widest">
-        <a href="index.html" class="hover:text-blue-600">Home</a>
-        <a href="multilingual.html" class="hover:text-blue-600">Call Center</a>
-        <a href="noc.html" class="hover:text-blue-600">NOC</a>
-        <a href="credit.html" class="hover:text-blue-600">Credit</a>
-        <a href="data-mining.html" class="hover:text-blue-600">Data Mining</a>
-        <a href="careers.html" class="hover:text-blue-600">Careers</a>
-        <a href="about.html" class="hover:text-blue-600">About</a>
-        <a href="news.html" class="hover:text-blue-600">News</a>
-        <a href="contact.html" class="text-blue-600 font-black underline">Contact</a>
-    </div>
-</nav>
-
-    <section id="home" class="hero-bg text-white py-40 px-12">
-        <div class="max-w-6xl mx-auto">
-            <div class="max-w-3xl">
-                <h1 class="text-7xl font-bold leading-tight mb-8">Next-generation <br><span class="text-blue-400">Customer Experience</span></h1>
-                <p class="text-xl text-gray-300 mb-10 leading-relaxed">
-                    Our flexibility enables us to manage your requirements with complete dedication. We provide efficient and competitive solutions that support customer relations in all stages.
+    <header class="hero-gradient relative min-h-screen flex items-center px-16 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center relative z-20">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-3 glass px-4 py-2 rounded-full">
+                    <span class="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-blue-400">Next-Gen Outsourcing Terminal</span>
+                </div>
+                <h1 class="text-8xl font-black tracking-tighter leading-[0.9] text-white">
+                    GLOBAL <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600">SYNERGY</span>
+                </h1>
+                <p class="text-xl text-slate-400 max-w-lg leading-relaxed">
+                    Elevating 16 years of operational excellence into a unified digital ecosystem. We speak 25+ languages, monitor critical nodes 24/7, and recover assets with surgical precision.
                 </p>
-                <div class="flex gap-4">
-                    <a href="#multilingual" class="bg-blue-500 px-10 py-4 rounded font-bold hover:bg-blue-400 transition">OUR SERVICES</a>
-                    <a href="#contact" class="border border-white/40 px-10 py-4 rounded font-bold hover:bg-white/10 transition text-center">CONNECT WITH US</a>
+                <div class="flex gap-6">
+                    <a href="contact.html" class="bg-white text-slate-950 px-10 py-5 rounded-full font-black text-xs uppercase tracking-widest hover:bg-blue-500 hover:text-white transition-all">Request Audit</a>
+                    <a href="about.html" class="glass text-white px-10 py-5 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white/10 transition-all">The Legacy</a>
+                </div>
+            </div>
+            
+            <div class="relative hidden lg:block animate-float">
+                <div class="w-[500px] h-[500px] rounded-full border border-blue-500/20 absolute -top-20 -right-20 animate-[spin_20s_linear_infinite]"></div>
+                <div class="w-[500px] h-[500px] glass rounded-3xl flex items-center justify-center relative overflow-hidden">
+                    <div class="text-[200px] font-black opacity-5 select-none">FSP</div>
+                    <div class="absolute bottom-10 left-10 space-y-2">
+                        <p class="text-4xl font-bold">16yr</p>
+                        <p class="text-[10px] uppercase tracking-widest text-blue-500">Market Authority</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <div class="bg-gray-50 py-16 px-12 border-b">
-        <div class="max-w-7xl mx-auto flex flex-wrap justify-center items-center opacity-40 grayscale gap-20">
-            <span class="text-2xl font-bold">PANASONIC</span>
-            <span class="text-2xl font-bold italic">Tonino Lamborghini</span>
-            <span class="text-2xl font-bold">MERIDIAN</span>
-            <span class="text-2xl font-bold">KNOWITÀ</span>
-        </div>
-    </div>
-
-    <section id="multilingual" class="section-padding bg-white px-12 border-b">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-4xl font-bold text-blue-900 mb-6">Multilingual Call Center</h2>
-                <p class="text-gray-600 mb-6 text-lg">Our call center covers both Outbound & Inbound, 24/7, 365 days. We support 25+ languages including English, Italian, Spanish, German, French, and more.</p>
-                <ul class="space-y-3 font-semibold text-gray-700 mb-8">
-                    <li class="flex items-center gap-3"><span class="text-blue-500">✔</span> Telephone Support</li>
-                    <li class="flex items-center gap-3"><span class="text-blue-500">✔</span> Email & Live Chat Support</li>
-                    <li class="flex items-center gap-3"><span class="text-blue-500">✔</span> Social Media Management</li>
-                </ul>
-                <a href="#contact" class="text-blue-600 font-bold border-b-2 border-blue-600 pb-1">GET A QUOTE FOR THIS SERVICE →</a>
-            </div>
-            <div class="bg-blue-900 h-80 rounded-2xl flex items-center justify-center text-white text-7xl">🎧</div>
+    <section class="py-20 border-y border-white/5 bg-slate-950 px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+            <div><p class="text-5xl font-black text-white mb-2">365<span class="text-blue-500">d</span></p><p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Always Active</p></div>
+            <div><p class="text-5xl font-black text-white mb-2">25<span class="text-blue-500">+</span></p><p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Native Tongues</p></div>
+            <div><p class="text-5xl font-black text-white mb-2">99.9<span class="text-blue-500">%</span></p><p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">NOC Uptime</p></div>
+            <div><p class="text-5xl font-black text-white mb-2">1M<span class="text-blue-500">+</span></p><p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Tickets Resolved</p></div>
         </div>
     </section>
 
-    <section id="noc" class="section-padding bg-slate-900 text-white px-12">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-6">Network Operations Center (NOC)</h2>
-            <p class="text-gray-400 text-xl max-w-2xl mx-auto mb-12">Proactive monitoring and technical support for several networks requiring special attention. 24/7 vigilance for your infrastructure.</p>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 border border-white/10 rounded-xl hover:bg-white/5 transition">
-                    <h4 class="font-bold text-xl mb-4">Monitoring</h4>
-                    <p class="text-sm text-gray-500">Real-time oversight of critical network traffic and stability.</p>
-                </div>
-                <div class="p-8 border border-white/10 rounded-xl hover:bg-white/5 transition">
-                    <h4 class="font-bold text-xl mb-4">Escalation</h4>
-                    <p class="text-sm text-gray-500">Rapid response and technical escalation of all network incidents.</p>
-                </div>
-                <div class="p-8 border border-white/10 rounded-xl hover:bg-white/5 transition">
-                    <h4 class="font-bold text-xl mb-4">Reporting</h4>
-                    <p class="text-sm text-gray-500">Serious and effective feedback conducted by professional teams.</p>
-                </div>
+    <section class="py-32 px-16 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto space-y-20">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-6">
+                <h2 class="text-5xl font-black uppercase tracking-tighter">Core managed <br>Infrastructures</h2>
+                <p class="max-w-md text-slate-500 text-sm">Our multidisciplinary structure allows for surgical execution across four primary business pillars, tailored for Fortune 500 standards.</p>
             </div>
-        </div>
-    </section>
 
-    <section id="credit" class="section-padding bg-white px-12">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-            <div class="p-10 border rounded-3xl hover:shadow-2xl transition">
-                <h3 class="text-2xl font-bold text-blue-900 mb-4">Credit Management</h3>
-                <p class="text-gray-600 mb-6">We aid you in granting credit & recovering this credit when it's due. Professional, courtesy, and promptness are our absolute strengths.</p>
-                <a href="#contact" class="text-blue-500 font-bold uppercase text-xs tracking-widest">Learn More</a>
-            </div>
-            <div id="data" class="p-10 border rounded-3xl hover:shadow-2xl transition bg-gray-50">
-                <h3 class="text-2xl font-bold text-blue-900 mb-4">Data Mining & KPO</h3>
-                <p class="text-gray-600 mb-6">Examining your large databases and generating new intelligence information to give your business a competitive edge.</p>
-                <a href="#contact" class="text-blue-500 font-bold uppercase text-xs tracking-widest">Learn More</a>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <a href="multilingual.html" class="glass p-10 rounded-[2rem] hover:bg-blue-600 transition-all duration-500 group">
+                    <div class="text-3xl mb-12">🎙️</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Call Center</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-6 group-hover:text-white transition">Voice, Email, and Social integration with native fluency.</p>
+                    <span class="text-[10px] font-black uppercase tracking-widest group-hover:underline">Enter Hub</span>
+                </a>
+                <a href="noc.html" class="glass p-10 rounded-[2rem] hover:bg-slate-800 transition-all duration-500 group">
+                    <div class="text-3xl mb-12">🛡️</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">NOC Ops</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-6 group-hover:text-white transition">Technical vigilance and 24/7 network guarding.</p>
+                    <span class="text-[10px] font-black uppercase tracking-widest group-hover:underline">Monitor Live</span>
+                </a>
+                <a href="credit.html" class="glass p-10 rounded-[2rem] hover:bg-indigo-900 transition-all duration-500 group">
+                    <div class="text-3xl mb-12">💰</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Credit Mgmt</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-6 group-hover:text-white transition">Asset recovery and commercial qualification protocols.</p>
+                    <span class="text-[10px] font-black uppercase tracking-widest group-hover:underline">Secure Capital</span>
+                </a>
+                <a href="data-mining.html" class="glass p-10 rounded-[2rem] hover:bg-emerald-900 transition-all duration-500 group">
+                    <div class="text-3xl mb-12">🔍</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Intelligence</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-6 group-hover:text-white transition">Knowledge Process Outsourcing and Data Mining.</p>
+                    <span class="text-[10px] font-black uppercase tracking-widest group-hover:underline">Extract Intel</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="section-padding bg-gray-100 px-12">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8">16 Years of Excellence</h2>
-            <p class="text-gray-700 text-lg leading-relaxed mb-10">
-                FSP Global has proven itself a highly efficient partner in managing, reorganizing, updating and qualifying commercial databases and contact lists. Our many years of experience cater to any project needs.
-            </p>
-            <div id="careers" class="bg-white p-8 rounded-xl shadow-lg border">
-                <h4 class="font-bold text-xl mb-2 text-blue-600">Careers</h4>
-                <p class="text-gray-600 mb-4 italic">Join our team of multilingual professionals in Cluj-Napoca.</p>
-                <button class="bg-blue-600 text-white px-6 py-2 rounded font-bold">Apply Now</button>
+    <footer class="py-20 bg-slate-950 px-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="text-center md:text-left space-y-4">
+                <div class="text-2xl font-black text-white">FSP<span class="text-blue-500">GLOBAL</span></div>
+                <p class="text-[10px] text-slate-500 uppercase tracking-widest">Piata Stefan cel Mare • Cluj-Napoca • Romania</p>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section-padding bg-white px-12">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Connect With Us</h2>
-                <p class="text-gray-500 italic">Get your free price quote within 24 hours.</p>
+            <div class="flex gap-8 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                <a href="about.html" class="hover:text-white transition">The Agency</a>
+                <a href="careers.html" class="hover:text-white transition">Careers</a>
+                <a href="news.html" class="hover:text-white transition">Newsroom</a>
+                <a href="contact.html" class="text-blue-500">Terminal</a>
             </div>
-            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input type="text" placeholder="Full Name" class="p-4 border bg-gray-50 rounded-lg">
-                <input type="email" placeholder="Email Address" class="p-4 border bg-gray-50 rounded-lg">
-                <select class="p-4 border bg-gray-50 rounded-lg md:col-span-2">
-                    <option>Select Service Needed...</option>
-                    <option>Multilingual Call Center</option>
-                    <option>Network Operations Center</option>
-                    <option>Credit Management</option>
-                </select>
-                <textarea placeholder="Tell us about your project" class="p-4 border bg-gray-50 rounded-lg md:col-span-2 h-32"></textarea>
-                <button class="bg-blue-600 text-white py-5 rounded-lg font-bold uppercase tracking-widest md:col-span-2 hover:bg-blue-700 transition">Send Quote Request</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="bg-slate-900 text-gray-500 py-16 px-12 border-t border-white/5">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-            <div class="text-2xl font-bold text-white">FSPGlobal</div>
-            <div class="text-xs text-right">Copyright © 2026 FSPGlobal. Developed for Presentation.</div>
         </div>
     </footer>
 
