@@ -3,55 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Insights | FSPGlobal Updates</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
-<body>
+<body class="bg-white text-slate-900">
 
-    <nav class="flex items-center justify-between px-12 py-5 border-b sticky top-0 bg-white z-50 shadow-sm">
+    <nav class="flex items-center justify-between px-12 py-5 border-b sticky top-0 bg-white/90 backdrop-blur-md z-50">
         <div class="text-3xl font-extrabold text-blue-900 tracking-tight"><a href="index.html">FSP<span class="text-blue-500">Global</span></a></div>
-        <div class="hidden lg:flex space-x-4 text-gray-700 font-bold text-[10px] uppercase tracking-widest">
+        <div class="hidden lg:flex space-x-6 text-gray-700 font-bold text-[10px] uppercase tracking-widest">
             <a href="index.html" class="hover:text-blue-600">Home</a>
             <a href="multilingual.html" class="hover:text-blue-600">Call Center</a>
             <a href="noc.html" class="hover:text-blue-600">NOC</a>
             <a href="credit.html" class="hover:text-blue-600">Credit</a>
             <a href="data-mining.html" class="hover:text-blue-600">Data Mining</a>
-            <a href="careers.html" class="hover:text-blue-600">Careers</a>
             <a href="about.html" class="hover:text-blue-600">About</a>
-            <a href="news.html" class="hover:text-blue-600">News</a>
-            <a href="contact.html" class="text-blue-600 font-black underline">Contact</a>
+            <a href="news.html" class="text-blue-600 border-b-2 border-blue-600">News</a>
+            <a href="contact.html" class="hover:text-blue-600">Contact</a>
         </div>
     </nav>
 
-    <header class="bg-blue-900 text-white py-24 text-center">
-        <h1 class="text-5xl font-bold uppercase tracking-tighter">Company News</h1>
-        <p class="text-blue-300 mt-4 text-xl">REPLACE_SUBTITLE</p>
+    <header class="py-24 px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-slate-900 rounded-[3rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+                <div class="lg:w-1/2 h-96 bg-blue-600 flex items-center justify-center text-8xl">🗞️</div>
+                <div class="lg:w-1/2 p-16 text-white flex flex-col justify-center">
+                    <span class="text-blue-400 font-bold uppercase text-xs tracking-widest mb-4">Featured Post • April 2026</span>
+                    <h1 class="text-4xl font-black mb-6 leading-tight">FSPGlobal Reaches New 30-Language Milestone</h1>
+                    <p class="text-slate-400 leading-relaxed mb-8">We are proud to announce the expansion of our multilingual hub, now supporting over 30 global languages to better serve our Asian and African partners.</p>
+                    <a href="#" class="text-white font-bold border-b-2 border-blue-500 self-start pb-1">Read Full Story</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-   <section class="max-w-6xl mx-auto py-20 px-10">
-    <h2 class="text-3xl font-bold mb-12 border-b-4 border-blue-600 inline-block uppercase tracking-tighter">Latest Company Updates</h2>
-    
-    <div class="grid md:grid-cols-2 gap-12">
-        <article class="space-y-4">
-            <div class="h-64 bg-gray-200 rounded-2xl overflow-hidden shadow-md">
-                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80" class="w-full h-full object-cover">
-            </div>
-            <span class="text-blue-600 font-bold text-xs uppercase">April 2026</span>
-            <h3 class="text-2xl font-bold hover:text-blue-600 cursor-pointer transition">FSP Global Expands Multilingual Reach</h3>
-            <p class="text-gray-600 leading-relaxed">We have officially added three new languages to our core portfolio, now covering over 28 languages for our global partners...</p>
-        </article>
+    <section class="py-20 px-12 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-12">
+            <article class="group cursor-pointer">
+                <div class="bg-gray-100 h-64 rounded-3xl mb-6 flex items-center justify-center text-4xl group-hover:scale-95 transition-transform duration-500">📡</div>
+                <span class="text-blue-600 font-bold text-xs uppercase tracking-widest">NOC Update</span>
+                <h3 class="text-xl font-bold mt-2 group-hover:text-blue-600 transition">Infrastructure Upgrade for 2026</h3>
+                <p class="text-slate-500 text-sm mt-4 leading-relaxed line-clamp-2">New security protocols and monitoring hardware integrated into our Cluj headquarters to support high-prestige clients.</p>
+            </article>
 
-        <article class="space-y-4">
-            <div class="h-64 bg-gray-200 rounded-2xl overflow-hidden shadow-md">
-                <img src="https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80" class="w-full h-full object-cover">
-            </div>
-            <span class="text-blue-600 font-bold text-xs uppercase">March 2026</span>
-            <h3 class="text-2xl font-bold hover:text-blue-600 cursor-pointer transition">New Technology Upgrade for NOC</h3>
-            <p class="text-gray-600 leading-relaxed">Investing in the future: Our Network Operations Center has received a major infrastructure update to support next-gen 5G monitoring...</p>
-        </article>
-    </div>
-</section>
+            <article class="group cursor-pointer">
+                <div class="bg-gray-100 h-64 rounded-3xl mb-6 flex items-center justify-center text-4xl group-hover:scale-95 transition-transform duration-500">🏆</div>
+                <span class="text-blue-600 font-bold text-xs uppercase tracking-widest">Awards</span>
+                <h3 class="text-xl font-bold mt-2 group-hover:text-blue-600 transition">BPO Partner of the Year Nominee</h3>
+                <p class="text-slate-500 text-sm mt-4 leading-relaxed line-clamp-2">Recognition for our 16 years of dedicated service and flexibility in managing multinational groups.</p>
+            </article>
+
+            <article class="group cursor-pointer">
+                <div class="bg-gray-100 h-64 rounded-3xl mb-6 flex items-center justify-center text-4xl group-hover:scale-95 transition-transform duration-500">🤝</div>
+                <span class="text-blue-600 font-bold text-xs uppercase tracking-widest">Community</span>
+                <h3 class="text-xl font-bold mt-2 group-hover:text-blue-600 transition">Tech Hub Romania: Our Impact</h3>
+                <p class="text-slate-500 text-sm mt-4 leading-relaxed line-clamp-2">How FSPGlobal contributes to the thriving digital landscape of Cluj-Napoca through local employment and tech investment.</p>
+            </article>
+        </div>
+    </section>
 
 </body>
 </html>
